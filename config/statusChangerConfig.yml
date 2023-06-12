@@ -1,0 +1,25 @@
+change-interval: 60     # After how many seconds should the status change to next one
+                        # Recommended at least 15 seconds, since the change is not instant on Discord
+
+status-list:
+  - "Managing the server"
+  - "World War 7"
+  - "Use -help for help"
+  - "With your dog"
+  - "With your cat"
+  - "With your hamster"
+  - "With your fish"
+  - "Watching you"
+  - "Watching the server"
+  - "Watching the world burn"
+  - "Playing Minecraft"
+  - "Playing Fortnite"
+  - "Playing Roblox"
+  - "looking at YouTube"
+  - "looking at Netflix"
+  - "looking at Hulu"
+  - "Random status"
+  - "Random status"
+  - "Random status"
+  - "Random status"
+

@@ -1,0 +1,59 @@
+selector-creation-admin-role: Administrator
+
+role-added-embed:
+  enabled: true
+  send-to: channel # possible values: 'dm' = user's direct messages, 'channel' = the channel of selector
+  embed-title: "Role added, {user}"
+  embed-description: "New role **{role}** has been added to your account!"
+  embed-footer: "World War 7 Reaction Roles"
+  embed-color: 0x00ff00
+
+role-removed-embed:
+  enabled: true
+  send-to: channel # possible values: 'dm' = user's direct messages, 'channel' = the channel of selector
+  embed-title: "Role removed, {user}"
+  embed-description: "Role **{role}** has been removed from your account!"
+  embed-footer: "World War 7 Reaction Roles"
+  embed-color: 0xff0000
+
+another-role-required-embed:
+  send-to: dm # possible values: 'dm' = user's direct messages, 'channel' = the channel of selector
+  embed-title: "Another role required, {user}"
+  embed-description: "Sorry, you have to have **{required_role}** before you can acquire this role."
+  embed-footer: "World War 7 Reaction Roles"
+  embed-color: 0xff0000
+
+selectors:
+  rules:  # This is the selector name
+    type: reaction     # Possible values: reaction/menu
+    select-menu-title: "Agree to rules:"
+    embed-title: "Server Rules"
+    embed-description: "Please, agree to our server rules by clicking the confirm button."
+    embed-footer: "World War 7 Reaction Roles"
+    embed-color: 0x00ff00
+    options:
+      agreeRules:
+        name: "Accept Rules"
+        description: "Select this to receive RulesAccepted role."
+        emoji: "✅"
+        role: RulesAccepted
+  multi-role-selector: # This is the selector name
+    type: menu    # Possible values: reaction/menu
+    select-menu-title: "Select your role:"
+    embed-title: "Select your role:"
+    embed-description: "😔 - Role 1\n😊 - Role 2"
+    embed-footer: "World War 7 Reaction Roles"
+    embed-color: 0x00ff00
+    only-one-role: true # If set to true, user will be able to only select one role from the selector
+    options:
+      Role1:
+        name: "Some Role"
+        description: "Select this to receive some role."
+        emoji: "😔"
+        role: Role1
+        required-role: RulesAccepted # The user has to have RulesAccepted role to be able to get the Role1 role
+      Role2:
+        name: "Another Role"
+        description: "Select this to receive another role"
+        emoji: "😊"
+        role: Role2

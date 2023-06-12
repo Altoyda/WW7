@@ -1,0 +1,85 @@
+maximum-tickets-per-user: 3
+ticket-creation-admin-role: Admin # ID or name of role that will be able to use -ticketsgen
+ticket-channel-category: Tickets
+ping-admin-role-on-creation: true
+ping-admin-role-on-user-response: true
+send-transcription: true
+transcript-description: "Hello, I'm sending you a transcription of your ticket (in case you need it), thanks for using our ticket system."
+transcript-channel: 1006608953343479901 # If there is channel ID defined, it will save transcripts of all tickets here
+require-close-confirmation: true # If set to true, confirmation message will appear on every ticket close
+
+
+# Available placeholders:
+# - {ticket_count} - Number of the ticket
+# - {creator} - Name of the user that created the ticket
+# - {category_name} - Name of the category the ticket was created for
+ticket-channel-name-format:  "Ticket {ticket_count} - {creator} - {category_name}"
+
+ticket-creator-embed:
+  embed-title: "Create new ticket"
+  embed-description: "To create ticket, please react with button that corresponds to your issue category."
+  embed-colour: 0xFFA500
+  embed-footer: "World War 7"
+  image-name: "logo.png" # Image should be in the images folder.
+
+ticket-created-embed:
+  embed-title: "Ticket created!"
+  embed-description: "Your ticket was created: {channel}"
+  embed-colour: 0x00ff00
+  embed-footer: "World War 7"
+  image-name: "logo.png" # Image should be in the images folder.
+
+too-many-tickets-embed:
+  embed-title: "Too many tickets!"
+  embed-description: "Please, close some other ticket, before creating new one."
+  embed-colour: 0xff0000
+  embed-footer: "World War 7"
+  image-name: "logo.png" # Image should be in the images folder.
+
+ticket-management-embed:
+  embed-title: "{channel-name}" # {channel-name} will be replaced with name of the ticket channel
+  embed-description: "{instructions}"
+  embed-colour: 0xFFA500
+  embed-footer: "World War 7"
+  close-button: "Close ticket"
+  image-name: "logo.png" # Image should be in the images folder.
+
+missing-role-embed:
+  embed-title: "Missing role"
+  embed-description: "You need the {role} role to create new ticket in this category!"
+  embed-colour: 0xff0000
+  embed-footer: "World War 7"
+  image-name: "logo.png" # Image should be in the images folder.
+
+confirm-close-embed:
+  embed-title: "Confirmation"
+  embed-description: "Do you really want to close this ticket?"
+  embed-colour: 0xFFA500
+  embed-footer: "World War 7"
+  confirm-button: "Confirm"
+
+categories:
+  general:
+    admin-role: Admin
+    name: General ticket
+    emoji: '❤'  # The emoji should be in UTF-8 form, ":name:" will not work!
+    instructions: "Thanks for contacting us via ticket system! While waiting for our staff to take care of you, please, tell us more about the problem."
+    required-role:   # Leave blank if everyone should be able to open ticket in this category
+  # bug_report:
+  #   admin-role: Admin
+  #   name: Bug report
+  #   emoji: '❤'
+  #   instructions: "Thanks for contacting us via ticket system! While waiting for our staff to take care of you, please, tell us more about the bug."
+  #   required-role:  # Leave blank if everyone should be able to open ticket in this category
+  game_bug_report:
+    admin-role: Admin
+    name: Game bug report
+    emoji: '❤'
+    instructions: "Thanks for contacting us via ticket system! While waiting for our staff to take care of you, please, tell us more about the bug."
+    required-role:  # Leave blank if everyone should be able to open ticket in this category
+  feature_request:
+    admin-role: Admin
+    name: Feature request
+    emoji: '❤'
+    instructions: "Thanks for contacting us via ticket system! While waiting for our staff to take care of you, please, tell us more about what would you like us to implement."
+    required-role:  # Leave blank if everyone should be able to open ticket in this category

@@ -1,0 +1,24 @@
+
+like-emoji: "👍"
+accept-emoji: "✅"
+deny-emoji: "🚫"
+
+suggestion-channels:
+  channel1:   # You can add as many channels as u want, just copy this section with different name
+    channel-id: 1006608953079234622 # ID of the suggestions channel
+    accept-role: Admin # Role that will be able to accept/deny suggestions
+    embed-title: "Suggestion from {user}"
+    accepted-prefix: "[Accepted]"
+    denied-prefix: "[Denied]"
+    embed-footer: "World War 7 Suggestions"
+    new-color: 0x0000ff   # Color for new suggestion
+    accept-color: 0x00ff00    # Color for accepted suggestion
+    deny-color: 0xff0000    # Embed for denied suggestion
+
+
+missing-role-embed:
+  title: "Insufficient permissions"
+  description: "Sorry, you need the {role} role to be able to do this."
+  color: 0xff0000
+  footer: "World War 7 Suggestions"
+

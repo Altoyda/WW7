@@ -1,0 +1,24 @@
+##########################
+#  DISCORD BOT SETTINGS  #
+##########################
+
+bot-token: "MTExNzg0NDIwNjIxNjU0NDM4Ng.GGOp0l.g8Xq6r0aOEU0es20Q8RqJy3igryjEnNIEIWIFg" # put your DISCORD token here
+bot-activity: "Managing the server"
+
+# Do not need this but is here if you want to make a full database server. At this time its using SQLite3
+# database:
+  # host: localhost
+  # port: 3306
+  # databaseName: test.db
+  # user: test
+  # password: test
+
+# Unknown command handling
+remove-unknown-commands: true
+
+command-not-found-embed:
+  enabled: true
+  title: "Unknown command"
+  description: "Unknown command, try again."
+  color: 0xff0000
+  footer: "World War 7"

@@ -1,0 +1,28 @@
+private-welcome-message:
+  send-private-message: true
+  embed-caption: "Welcome on our server! World War 7."
+  embed-description: "Welcome, thanks for visiting our Discord server! We are happy you are joining our awesome community!"
+  embed-fields:
+    rules:
+      caption: "Rules"
+      description: "Please, read rules before posting anything on our server."
+      inline: true
+    support:
+      caption: "Support"
+      description: "If you have any questions, you can contact our support team. We are online 6AM - 22PM CET!"
+      inline: true
+    website:
+      caption: "Website"
+      description: "You can also visit our website here: http://example.com/"
+      inline: true
+  embed-footer: "World War 7"
+  embed-color: 0x00ff00
+
+public-welcome-message:
+  send-public-message: true
+  public-welcome-message-channel: 1006608952886308878 # Put ID of your welcome-message channel here
+  embed-caption: "Welcome on our server {user}!"
+  embed-description: "Welcome, thanks for visiting our Discord server! We are happy you are joining our awesome community!"
+  embed-fields: []
+  embed-footer: "World War 7"
+  embed-color: 0x00ff00

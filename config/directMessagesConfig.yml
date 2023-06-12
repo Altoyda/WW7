@@ -1,0 +1,35 @@
+dm-channel: 1006608952886308880  # ID of channel messages will be forwarded to
+send-admin-role: Administrator
+sendall-admin-role: Administrator
+
+invalid-recipient-embed:
+  title: "Invalid recipient"
+  description: "User {user} was not found on the server. Message has not been sent."
+  color: 0xff0000
+
+send-missing-args-embed:
+  title: "Missing command arguments"
+  description: "You are missing some command arguments! Correct format: -send <username#discriminator> <message>"
+  color: 0xff0000
+
+sendall-missing-args-embed:
+  title: "Missing command arguments"
+  description: "You are missing some command arguments! Correct format: -sendall <message>"
+  color: 0xff0000
+
+send-success-embed:
+  title: "Success!"
+  description: "Message successfully sent."
+  color: 0x00ff00
+
+sendall-success-embed:
+  title: "Success!"
+  description: "Message successfully sent to {count} users."
+  color: 0x00ff00
+
+sending-message-embed-format: # How should the embed sent to the user look like
+  color: 0x0000ff
+
+recieved-message-embed-format: # How should the recieved message look like
+  color: 0x0000ff
+  title: "Message from `{user}`"
