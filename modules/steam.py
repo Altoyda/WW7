@@ -16,7 +16,7 @@ class Steam(commands.Cog):
         print('Steam module ready!')
 
     async def retrieve_steam_profile(self, steam_id):
-        api_key = "1382EBF6C6DDC40F189623876ED277EA"
+        api_key = "ADD YOUR STEAM API KEY"
         api_url = f"http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key={api_key}&steamids={steam_id}"
         async with aiohttp.ClientSession() as session:
             async with session.get(api_url) as response:
