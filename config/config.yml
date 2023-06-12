@@ -2,7 +2,7 @@
 #  DISCORD BOT SETTINGS  #
 ##########################
 
-bot-token: "MTExNzg0NDIwNjIxNjU0NDM4Ng.GGOp0l.g8Xq6r0aOEU0es20Q8RqJy3igryjEnNIEIWIFg" # put your DISCORD token here
+bot-token: "DISCORD TOKEN" # put your DISCORD token here
 bot-activity: "Managing the server"
 
 # Do not need this but is here if you want to make a full database server. At this time its using SQLite3
